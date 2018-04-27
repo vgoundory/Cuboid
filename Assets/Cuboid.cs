@@ -95,9 +95,7 @@ public class Cuboid : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if(other.gameObject.CompareTag("Tiles"))
-        {
-        }
+    
     }
     
 
