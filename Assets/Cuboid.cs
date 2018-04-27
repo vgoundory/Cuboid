@@ -12,7 +12,7 @@ public enum Direction
 public class Cuboid : MonoBehaviour
 {
 
-    public float rotationSpeed = 250;
+    public float rotationSpeed = 100;
 
     private bool _moving;
     private Direction _rotationDirection;
@@ -43,10 +43,10 @@ public class Cuboid : MonoBehaviour
 
             _totalRotation += deltaRotation;
         }
-        else if (Input.GetKeyUp(KeyCode.W)) Rotate(Direction.North);
-        else if (Input.GetKeyUp(KeyCode.A)) Rotate(Direction.West);
-        else if (Input.GetKeyUp(KeyCode.S)) Rotate(Direction.South);
-        else if (Input.GetKeyUp(KeyCode.D)) Rotate(Direction.East);
+        else if (Input.GetKeyUp(KeyCode.UpArrow)) Rotate(Direction.North);
+        else if (Input.GetKeyUp(KeyCode.LeftArrow)) Rotate(Direction.West);
+        else if (Input.GetKeyUp(KeyCode.DownArrow)) Rotate(Direction.South);
+        else if (Input.GetKeyUp(KeyCode.RightArrow)) Rotate(Direction.East);
 
     }
 
@@ -87,5 +87,20 @@ public class Cuboid : MonoBehaviour
             _scale.y = temp;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Wood"))
+        {
+            Destroy(other.gameObject);
+        }
+
+        if(other.gameObject.CompareTag("Tiles"))
+        {
+        }
+    }
+    
+
+
 }
 
