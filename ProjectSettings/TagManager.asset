@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Wood
   - Tiles
+  - Destination
+  - Destination2
+  - Destination3
   layers:
   - Default
   - TransparentFX

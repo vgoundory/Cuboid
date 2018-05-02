@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public enum Direction
 {
     North,
@@ -94,9 +96,20 @@ public class Cuboid : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        if (other.gameObject.CompareTag("Destination"))
+        {
+            Destroy(other.gameObject);
+            SceneManager.LoadScene("Level2");
+        }
+        if (other.gameObject.CompareTag("Destination2"))
+        {
+            Destroy(other.gameObject);
+            SceneManager.LoadScene("Level3");
+        }
 
-    
+
     }
+
     
 
 
