@@ -106,6 +106,11 @@ public class Cuboid : MonoBehaviour
             Destroy(other.gameObject);
             SceneManager.LoadScene("Level3");
         }
+        if (other.gameObject.CompareTag("Destination3"))
+        {
+            Destroy(other.gameObject);
+            SceneManager.LoadScene("Level4");
+        }
 
 
     }

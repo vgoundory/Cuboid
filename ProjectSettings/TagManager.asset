@@ -9,6 +9,8 @@ TagManager:
   - Destination
   - Destination2
   - Destination3
+  - Bridge1
+  - Switch
   layers:
   - Default
   - TransparentFX
