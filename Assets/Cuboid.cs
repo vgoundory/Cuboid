@@ -50,6 +50,8 @@ public class Cuboid : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.DownArrow)) Rotate(Direction.South);
         else if (Input.GetKeyUp(KeyCode.RightArrow)) Rotate(Direction.East);
 
+
+        
     }
 
     void Rotate(Direction direction)
@@ -92,31 +94,8 @@ public class Cuboid : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Wood"))
-        {
-            Destroy(other.gameObject);
-        }
-        if (other.gameObject.CompareTag("Destination"))
-        {
-            Destroy(other.gameObject);
-            SceneManager.LoadScene("Level2");
-        }
-        if (other.gameObject.CompareTag("Destination2"))
-        {
-            Destroy(other.gameObject);
-            SceneManager.LoadScene("Level3");
-        }
-        if (other.gameObject.CompareTag("Destination3"))
-        {
-            Destroy(other.gameObject);
-            SceneManager.LoadScene("Level4");
-        }
-
 
     }
-
     
-
-
 }
 

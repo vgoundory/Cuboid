@@ -11,6 +11,8 @@ TagManager:
   - Destination3
   - Bridge1
   - Switch
+  - Top
+  - Bottom
   layers:
   - Default
   - TransparentFX
