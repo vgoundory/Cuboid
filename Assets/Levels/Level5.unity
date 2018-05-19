@@ -1385,7 +1385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1783983579558104, guid: 7702272578de48c4a91161a67c316d28, type: 2}
       propertyPath: m_Name
-      value: Wood (2)
+      value: 'Wood '
       objectReference: {fileID: 0}
     - target: {fileID: 23306294050673718, guid: 7702272578de48c4a91161a67c316d28,
         type: 2}
@@ -3886,7 +3886,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1783983579558104, guid: 7702272578de48c4a91161a67c316d28, type: 2}
       propertyPath: m_Name
-      value: Wood (3)
+      value: 'Wood '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7702272578de48c4a91161a67c316d28, type: 2}
@@ -4110,7 +4110,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1783983579558104, guid: 7702272578de48c4a91161a67c316d28, type: 2}
       propertyPath: m_Name
-      value: Wood (1)
+      value: 'Wood '
       objectReference: {fileID: 0}
     - target: {fileID: 23306294050673718, guid: 7702272578de48c4a91161a67c316d28,
         type: 2}
