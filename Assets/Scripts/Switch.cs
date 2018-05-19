@@ -7,7 +7,7 @@ public class Switch : MonoBehaviour {
     GameObject bridge;
 	// Use this for initialization
 	void Start () {
-        bridge = GameObject.Find("Bridge1");
+        bridge = GameObject.Find("Bridge");
         bridge.SetActive(false);
 	}
 	
