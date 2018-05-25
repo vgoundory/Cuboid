@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 23081764720894694}
   - component: {fileID: 54885045550287106}
   - component: {fileID: 114890709453850112}
+  - component: {fileID: 114219296100988814}
   m_Layer: 0
   m_Name: Cuboid
   m_TagString: Untagged
@@ -198,6 +199,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114219296100988814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749698005669868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556586014f314524d89259e343a652be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score1: {fileID: 114871219408965228, guid: dff39a6b484f83c42a1848bf54ff35cd, type: 2}
+  score2: 0
 --- !u!114 &114346863684815452
 MonoBehaviour:
   m_ObjectHideFlags: 1
