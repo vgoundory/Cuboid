@@ -1015,7 +1015,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529403499}
     m_Modifications:
     - target: {fileID: 224119254387044546, guid: dff39a6b484f83c42a1848bf54ff35cd,
         type: 2}
@@ -1055,17 +1055,17 @@ Prefab:
     - target: {fileID: 224119254387044546, guid: dff39a6b484f83c42a1848bf54ff35cd,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224119254387044546, guid: dff39a6b484f83c42a1848bf54ff35cd,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 349.1
+      value: -57.899963
       objectReference: {fileID: 0}
     - target: {fileID: 224119254387044546, guid: dff39a6b484f83c42a1848bf54ff35cd,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 255.52399
+      value: -11.1
       objectReference: {fileID: 0}
     - target: {fileID: 224119254387044546, guid: dff39a6b484f83c42a1848bf54ff35cd,
         type: 2}
@@ -1204,6 +1204,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1518148159}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!224 &1529403499 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224906540345183296, guid: 7876449be4c994f47977cc5cc86f3d0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 619949294}
 --- !u!1 &1607133373
 GameObject:
   m_ObjectHideFlags: 0
