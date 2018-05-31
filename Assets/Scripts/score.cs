@@ -21,17 +21,17 @@ public class score : MonoBehaviour {
 	
 	}
 	void Update() {
-		if (Input.GetKeyDown (KeyCode.UpArrow))
+		if (Input.GetKeyUp (KeyCode.UpArrow))
 			score2++;
 			
 
-		else if (Input.GetKeyDown(KeyCode.DownArrow))
+		else if (Input.GetKeyUp(KeyCode.DownArrow))
 			score2++;
 
-		else if (Input.GetKeyDown(KeyCode.RightArrow))
+		else if (Input.GetKeyUp(KeyCode.RightArrow))
 			score2++;
 
-		else if (Input.GetKeyDown(KeyCode.LeftArrow))
+		else if (Input.GetKeyUp(KeyCode.LeftArrow))
 			score2++;
 
 		scoreis();
