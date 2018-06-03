@@ -15,6 +15,8 @@ TagManager:
   - Bottom
   - StrongBridge
   - Border
+  - Destination4
+  - Destination5
   layers:
   - Default
   - TransparentFX
