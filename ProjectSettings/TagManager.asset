@@ -17,6 +17,11 @@ TagManager:
   - Border
   - Destination4
   - Destination5
+  - Destination6
+  - Destination7
+  - Destination8
+  - Destination9
+  - Destination10
   layers:
   - Default
   - TransparentFX
