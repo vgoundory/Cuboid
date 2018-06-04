@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class Score : MonoBehaviour {
+public class score : MonoBehaviour {
 	public Text score1;
 	public int score2;
 
