@@ -59,8 +59,8 @@ GameObject:
   - component: {fileID: 65854977297757000}
   - component: {fileID: 23325683376715780}
   - component: {fileID: 54587082679888266}
-  - component: {fileID: 114854475527228780}
   - component: {fileID: 114913818277865200}
+  - component: {fileID: 114487917049104610}
   m_Layer: 0
   m_Name: TeleCube2
   m_TagString: TeleCube2
@@ -257,6 +257,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 350
+--- !u!114 &114487917049104610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879446626082512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c455c36e8eca1294da69ba70c17f2bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 350
 --- !u!114 &114739191804519046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,18 +282,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score1: {fileID: 0}
   score2: 0
---- !u!114 &114854475527228780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1879446626082512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d49005c56eba0479fbf2f2cad94ffc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 350
 --- !u!114 &114913818277865200
 MonoBehaviour:
   m_ObjectHideFlags: 1

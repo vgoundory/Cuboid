@@ -13,10 +13,7 @@ public class StrongSwitch : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,8 +22,5 @@ public class StrongSwitch : MonoBehaviour {
             bridge.SetActive(true);
             gameObject.SetActive(false);
         }
-        
-
     }
-
 }

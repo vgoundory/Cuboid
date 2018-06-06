@@ -10,11 +10,11 @@ public class TeleSwitch : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
+    void Start() {
 
-        TeleCube1 = GameObject.Find("TeleCube1");
+        TeleCube1 = GameObject.FindGameObjectWithTag("TeleCube1");
         TeleCube1.SetActive(false);
-        TeleCube2 = GameObject.Find("TeleCube2");
+        TeleCube2 = GameObject.FindGameObjectWithTag("TeleCube2");
         TeleCube2.SetActive(false);
         Player = GameObject.FindGameObjectWithTag("Player");
 
@@ -25,18 +25,29 @@ public class TeleSwitch : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
-	}
+        {
+            
+        }
+
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Top") || other.gameObject.CompareTag("Bottom"))
             {
+            Player.SetActive(false);
+
             TeleCube1.SetActive(true);
             TeleCube2.SetActive(true);
 
+
             gameObject.SetActive(false);
-            Player.SetActive(false);
+           
             
+
+
+
+
         }
 
 

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public enum Direction
+public enum Direction1
 {
     North,
     South,
@@ -13,13 +13,13 @@ public enum Direction
     West
 }
 
-public class Cuboid : MonoBehaviour
+public class CubeMove : MonoBehaviour
 {
 
     public float rotationSpeed = 350;
 
     private bool _moving;
-    private Direction _rotationDirection;
+    private Direction1 _rotationDirection;
     private Vector3 _pivot;
     private float _totalRotation;
     private Vector3 _axis;
@@ -42,22 +42,22 @@ public class Cuboid : MonoBehaviour
                 deltaRotation = 90 - _totalRotation;
                 _moving = false;
             }
-            if ((_rotationDirection == Direction.West) || (_rotationDirection == Direction.North))
+            if ((_rotationDirection == Direction1.West) || (_rotationDirection == Direction1.North))
                 transform.RotateAround(_pivot, _axis, deltaRotation);
             else transform.RotateAround(_pivot, _axis, -deltaRotation);
 
             _totalRotation += deltaRotation;
         }
-        else if (Input.GetKeyUp(KeyCode.UpArrow)) Rotate(Direction.North);
-        else if (Input.GetKeyUp(KeyCode.LeftArrow)) Rotate(Direction.West);
-        else if (Input.GetKeyUp(KeyCode.DownArrow)) Rotate(Direction.South);
-        else if (Input.GetKeyUp(KeyCode.RightArrow)) Rotate(Direction.East);
+        else if (Input.GetKeyUp(KeyCode.W)) Rotate(Direction1.North);
+        else if (Input.GetKeyUp(KeyCode.A)) Rotate(Direction1.West);
+        else if (Input.GetKeyUp(KeyCode.S)) Rotate(Direction1.South);
+        else if (Input.GetKeyUp(KeyCode.D)) Rotate(Direction1.East);
 
 
-        
+
     }
 
-    void Rotate(Direction direction)
+    void Rotate(Direction1 direction)
     {
         _rotationDirection = direction;
         _moving = true;
@@ -65,21 +65,21 @@ public class Cuboid : MonoBehaviour
 
         switch (_rotationDirection)
         {
-            case Direction.East:
+            case Direction1.East:
                 _pivot = transform.position + new Vector3(_scale.x, -_scale.y, 0);
                 break;
-            case Direction.West:
+            case Direction1.West:
                 _pivot = transform.position + new Vector3(-_scale.x, -_scale.y, 0);
                 break;
-            case Direction.North:
+            case Direction1.North:
                 _pivot = transform.position + new Vector3(0, -_scale.y, _scale.z);
                 break;
-            case Direction.South:
+            case Direction1.South:
                 _pivot = transform.position + new Vector3(0, -_scale.y, -_scale.z);
                 break;
         }
 
-        if ((_rotationDirection == Direction.East) || (_rotationDirection == Direction.West))
+        if ((_rotationDirection == Direction1.East) || (_rotationDirection == Direction1.West))
         {
             _axis = Vector3.forward;
             float temp = _scale.x;
@@ -100,13 +100,13 @@ public class Cuboid : MonoBehaviour
         if (other.gameObject.CompareTag("Border"))
         {
             GetComponent<Collider>().isTrigger = true;
-            
+
         }
         if (other.gameObject.CompareTag("cubefall"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
-    
+
 }
 
