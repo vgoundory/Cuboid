@@ -100,6 +100,10 @@ public class Cuboid : MonoBehaviour
             GetComponent<Collider>().isTrigger = true;
             
         }
+        if (other.gameObject.CompareTag("cubefall"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
     
 }

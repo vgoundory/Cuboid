@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114219296100988814}
   m_Layer: 0
   m_Name: Cuboid
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ Transform:
   m_GameObject: {fileID: 1164886007707098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.503, y: 0, z: 0}
-  m_LocalScale: {x: 0.05509, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 0.05509, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 4437776921720864}
   m_RootOrder: 1
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 1793910940623808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.496, y: 0, z: 0}
-  m_LocalScale: {x: 0.05509014, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 0.05509014, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 4437776921720864}
   m_RootOrder: 0
@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1749698005669868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.01, y: 2.465, z: 1.1}
+  m_LocalPosition: {x: -2, y: 1.1, z: -2}
   m_LocalScale: {x: 4, y: 2, z: 2}
   m_Children:
   - {fileID: 4043531485041856}
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556586014f314524d89259e343a652be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score1: {fileID: 114871219408965228, guid: dff39a6b484f83c42a1848bf54ff35cd, type: 2}
+  score1: {fileID: 0}
   score2: 0
 --- !u!114 &114346863684815452
 MonoBehaviour:

@@ -22,6 +22,7 @@ TagManager:
   - Destination8
   - Destination9
   - Destination10
+  - cubefall
   layers:
   - Default
   - TransparentFX
