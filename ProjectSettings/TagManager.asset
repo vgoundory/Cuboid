@@ -23,6 +23,10 @@ TagManager:
   - Destination9
   - Destination10
   - cubefall
+  - Text
+  - TeleSwitch
+  - TeleCube2
+  - TeleCube1
   layers:
   - Default
   - TransparentFX
