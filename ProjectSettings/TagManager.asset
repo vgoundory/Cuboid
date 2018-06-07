@@ -29,6 +29,8 @@ TagManager:
   - TeleCube1
   - Bridge2
   - Bridge3
+  - StrongBridge2
+  - StrongBridge3
   layers:
   - Default
   - TransparentFX
