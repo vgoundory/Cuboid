@@ -27,6 +27,8 @@ TagManager:
   - TeleSwitch
   - TeleCube2
   - TeleCube1
+  - Bridge2
+  - Bridge3
   layers:
   - Default
   - TransparentFX
