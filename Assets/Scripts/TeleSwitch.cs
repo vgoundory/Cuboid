@@ -11,25 +11,15 @@ public class TeleSwitch : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-
-
         TeleCubes = GameObject.Find("TeleCubes");
         TeleCubes.SetActive(false);
-
         Player = GameObject.FindGameObjectWithTag("Player");
-
-
-
-
     }
-
     // Update is called once per frame
     void Update () {
         {
             
         }
-
-
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -37,17 +27,7 @@ public class TeleSwitch : MonoBehaviour {
             {
             Player.SetActive(false);
             TeleCubes.SetActive(true);
-
-
             gameObject.SetActive(false);
-           
-            
-
-
-
-
         }
-
-
     }
 }

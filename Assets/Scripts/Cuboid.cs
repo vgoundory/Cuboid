@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public enum Direction
+public enum DirectionOfCuboid
 {
     North,
     South,
@@ -15,70 +15,67 @@ public enum Direction
 
 public class Cuboid : MonoBehaviour
 {
-    public float rotationSpeed = 350;
+    public float rotationSpeedOfCuboid = 350;
 
-    private bool _moving;
-    private Direction _rotationDirection;
+    private bool _CuboidMoving;
+    private DirectionOfCuboid _rotationDirectionOfCuboid;
     private Vector3 _pivot;
-    private float _totalRotation;
+    private float _totalRotationOfCuboid;
     private Vector3 _axis;
     private Vector3 _scale;
-    internal static Type cs;
 
     void Start()
     {
-        _moving = false;
+        _CuboidMoving = false;
         _scale = transform.localScale / 2.0f;
     }
 
     void Update()
     {
-        if (_moving)
+        if (_CuboidMoving)
         {
-            float deltaRotation = rotationSpeed * Time.deltaTime;
-            if (_totalRotation + deltaRotation >= 90)
+            float deltaRotation = rotationSpeedOfCuboid * Time.deltaTime;
+            if (_totalRotationOfCuboid + deltaRotation >= 90)
             {
-                deltaRotation = 90 - _totalRotation;
-                _moving = false;
+                deltaRotation = 90 - _totalRotationOfCuboid;
+                _CuboidMoving = false;
             }
-            if ((_rotationDirection == Direction.West) || (_rotationDirection == Direction.North))
+            if ((_rotationDirectionOfCuboid == DirectionOfCuboid.West) || (_rotationDirectionOfCuboid == DirectionOfCuboid.North))
                 transform.RotateAround(_pivot, _axis, deltaRotation);
             else transform.RotateAround(_pivot, _axis, -deltaRotation);
 
-            _totalRotation += deltaRotation;
+            _totalRotationOfCuboid += deltaRotation;
         }
-        else if (Input.GetKeyUp(KeyCode.UpArrow)) Rotate(Direction.North);
-        else if (Input.GetKeyUp(KeyCode.LeftArrow)) Rotate(Direction.West);
-        else if (Input.GetKeyUp(KeyCode.DownArrow)) Rotate(Direction.South);
-        else if (Input.GetKeyUp(KeyCode.RightArrow)) Rotate(Direction.East);
-
-
-        
+        else if (Input.GetKeyUp(KeyCode.UpArrow)) Rotation(DirectionOfCuboid.North);
+        else if (Input.GetKeyUp(KeyCode.LeftArrow)) Rotation(DirectionOfCuboid.West);
+        else if (Input.GetKeyUp(KeyCode.DownArrow)) Rotation(DirectionOfCuboid.South);
+        else if (Input.GetKeyUp(KeyCode.RightArrow)) Rotation(DirectionOfCuboid.East);
+          
     }
 
-    void Rotate(Direction direction)
+    void Rotation(DirectionOfCuboid direction)
     {
-        _rotationDirection = direction;
-        _moving = true;
-        _totalRotation = 0;
+        _rotationDirectionOfCuboid = direction;
+        _CuboidMoving = true;
+        _totalRotationOfCuboid = 0;
 
-        switch (_rotationDirection)
+        switch (_rotationDirectionOfCuboid)
         {
-            case Direction.East:
+            case DirectionOfCuboid.East:
                 _pivot = transform.position + new Vector3(_scale.x, -_scale.y, 0);
                 break;
-            case Direction.West:
+            case DirectionOfCuboid.West:
                 _pivot = transform.position + new Vector3(-_scale.x, -_scale.y, 0);
                 break;
-            case Direction.North:
+            case DirectionOfCuboid.North:
                 _pivot = transform.position + new Vector3(0, -_scale.y, _scale.z);
                 break;
-            case Direction.South:
+            case DirectionOfCuboid.South:
                 _pivot = transform.position + new Vector3(0, -_scale.y, -_scale.z);
                 break;
         }
 
-        if ((_rotationDirection == Direction.East) || (_rotationDirection == Direction.West))
+        if ((_rotationDirectionOfCuboid == DirectionOfCuboid.East) || (_rotationDirectionOfCuboid == DirectionOfCuboid.West))
         {
             _axis = Vector3.forward;
             float temp = _scale.x;
@@ -88,9 +85,9 @@ public class Cuboid : MonoBehaviour
         else
         {
             _axis = Vector3.right;
-            float temp = _scale.z;
+            float t = _scale.z;
             _scale.z = _scale.y;
-            _scale.y = temp;
+            _scale.y = t;
         }
     }
 

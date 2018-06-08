@@ -112,7 +112,6 @@ public class Telecube1 : MonoBehaviour
         }
         if(other.gameObject.CompareTag("TeleCube2"))
         {
-            Debug.Log("merger");
             TeleCuboid.SetActive(true);
             Instantiate(TeleCuboid,transform.position,transform.rotation);
 
