@@ -15,7 +15,6 @@ public enum Direction
 
 public class Cuboid : MonoBehaviour
 {
-
     public float rotationSpeed = 350;
 
     private bool _moving;

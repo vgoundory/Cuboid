@@ -15,7 +15,7 @@ public enum Cube1Direction
 
 public class Telecube1 : MonoBehaviour
 {
-
+    GameObject TeleCuboid;
     public float rotationSpeed = 350;
 
     private bool _moving;
@@ -30,6 +30,10 @@ public class Telecube1 : MonoBehaviour
     {
         _moving = false;
         _scale = transform.localScale / 2.0f;
+        TeleCuboid = GameObject.FindGameObjectWithTag("TeleCuboid");
+        TeleCuboid.SetActive(false);
+
+        
     }
 
     void Update()
@@ -105,6 +109,16 @@ public class Telecube1 : MonoBehaviour
         if (other.gameObject.CompareTag("cubefall"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        if(other.gameObject.CompareTag("TeleCube2"))
+        {
+            Debug.Log("merger");
+            TeleCuboid.SetActive(true);
+            Instantiate(TeleCuboid,transform.position,transform.rotation);
+
+            TeleCuboid.SetActive(false);
+            GameObject.Find("TeleCubes").SetActive(false);
+            
         }
     }
 

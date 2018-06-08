@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class TeleSwitch : MonoBehaviour {
 
-    GameObject TeleCube1;
-    GameObject TeleCube2;
     GameObject Player;
+    GameObject TeleCubes;
+
 
 
     // Use this for initialization
     void Start() {
 
-        TeleCube1 = GameObject.FindGameObjectWithTag("TeleCube1");
-        TeleCube1.SetActive(false);
-        TeleCube2 = GameObject.FindGameObjectWithTag("TeleCube2");
-        TeleCube2.SetActive(false);
+
+        TeleCubes = GameObject.Find("TeleCubes");
+        TeleCubes.SetActive(false);
+
         Player = GameObject.FindGameObjectWithTag("Player");
 
 
@@ -36,9 +36,7 @@ public class TeleSwitch : MonoBehaviour {
         if (other.gameObject.CompareTag("Top") || other.gameObject.CompareTag("Bottom"))
             {
             Player.SetActive(false);
-
-            TeleCube1.SetActive(true);
-            TeleCube2.SetActive(true);
+            TeleCubes.SetActive(true);
 
 
             gameObject.SetActive(false);
