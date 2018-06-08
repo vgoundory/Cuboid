@@ -866,6 +866,71 @@ Transform:
   m_PrefabParentObject: {fileID: 4163975251589318, guid: 8fb24dfa51d8f1745aa718cf3082264a,
     type: 2}
   m_PrefabInternal: {fileID: 976848529}
+--- !u!1 &430792339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 430792341}
+  - component: {fileID: 430792340}
+  m_Layer: 0
+  m_Name: Directional Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &430792340
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430792339}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &430792341
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430792339}
+  m_LocalRotation: {x: 0.36144686, y: 0.73959047, z: -0.41693583, w: 0.38539153}
+  m_LocalPosition: {x: 14.8, y: 20.42, z: -7.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 63.550003, y: 142.903, z: 28.609001}
 --- !u!1001 &436192950
 Prefab:
   m_ObjectHideFlags: 0
@@ -881,7 +946,7 @@ Prefab:
     - target: {fileID: 224074042050522174, guid: 939335157ee4e0640a7a25908c478569,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 126
+      value: 122.5
       objectReference: {fileID: 0}
     - target: {fileID: 224074042050522174, guid: 939335157ee4e0640a7a25908c478569,
         type: 2}
