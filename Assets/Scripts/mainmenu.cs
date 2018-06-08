@@ -57,6 +57,28 @@ public class mainmenu : MonoBehaviour {
         SceneManager.LoadScene(10);
     }
 
+    //player creation levels
+    public void CreateGame1()
+    {
+        SceneManager.LoadScene(11);
+    }
+    public void CreateGame2()
+    {
+        SceneManager.LoadScene(12);
+    }
+    public void CreateGame3()
+    {
+        SceneManager.LoadScene(13);
+    }
+    public void CreateGame4()
+    {
+        SceneManager.LoadScene(14);
+    }
+    public void CreateGame5()
+    {
+        SceneManager.LoadScene(15);
+    }
+
 
 
 
