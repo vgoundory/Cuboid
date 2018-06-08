@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
 
-    public float myTimer = 5;
+    public float myTimer = 60;
     private Text timerText;
 
     // Use this for initialization
@@ -29,7 +29,7 @@ public class Timer : MonoBehaviour
         {
             timerText.text = "Time up! You lost!";
 
-            //SceneManager.LoadScene("gameOver");
+            SceneManager.LoadScene("gameOver");
         }
         print(timerText);
 
