@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -881,7 +880,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -4940,48 +4938,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4552685018329080, guid: cede3892b305c2a4da7f3b8b7be99f06,
     type: 2}
   m_PrefabInternal: {fileID: 2068186438}
---- !u!1001 &2080330120
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -5.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983958917494904, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 0fdc743b04b348d41814bc3c84fbd187, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &2091848949
 Prefab:
   m_ObjectHideFlags: 0
